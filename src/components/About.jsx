@@ -5,8 +5,14 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2>Career Objective</h2>
-        <p>Passionate and self-motivated IT student with a strong foundation in programming, database management, and core IT concepts. Skilled in Python, Java, SQL, and analytical problem-solving, with an interest in building efficient and reliable solutions. Eager to apply and expand technical skills while contributing to impactful projects.</p>
+        <h2>About Me</h2>
+        <p>
+          I’m a dedicated IT undergraduate with a strong passion for technology and innovation. My journey in software development has helped me develop solid programming skills, with a growing focus on web development and UI/UX design..
+        </p>
+        <p>
+          When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects,
+          and continuously learning to stay updated with the latest industry trends.
+        </p>
       </div>
     </section>
   );

@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--white);
+  background: linear-gradient(135deg, #f0e6ff 0%, #e6f3ff 50%, #fefefe 100%);
   color: var(--text-color);
 }
 

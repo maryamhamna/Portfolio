@@ -1,47 +1,136 @@
 .contact {
   padding: 5rem 0;
-  background: white;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .contact h2 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #2c3e50;
   font-size: 2.5rem;
 }
 
-.contact-info {
-  max-width: 600px;
-  margin: 0 auto;
+.contact-intro {
   text-align: center;
-  animation: fadeIn 1s ease-out;
+  margin-bottom: 3rem;
+  color: #6c757d;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
-.contact-info p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  color: #34495e;
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-info p svg {
-  color: #3498db;
-  font-size: 1.2rem;
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.contact-info a {
+.contact-icon {
   color: #3498db;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.contact-details h3 {
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-details p, .contact-details a {
+  margin: 0;
+  color: #6c757d;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
-.contact-info a:hover {
+.contact-details a:hover {
+  color: #3498db;
   text-decoration: underline;
+}
+
+.contact-cta {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-cta h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-cta p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-intro {
+    font-size: 1.1rem;
+  }
 }
