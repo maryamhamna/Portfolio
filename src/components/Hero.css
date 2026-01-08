@@ -295,10 +295,6 @@
     text-align: center;
   }
 
-  .hero-image {
-    order: -1;
-  }
-
   .animated-name {
     font-size: 2.2rem;
   }
@@ -317,6 +313,11 @@
 
   .cta-buttons {
     justify-content: center;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
   }
 
   .image-container img {
@@ -352,5 +353,15 @@
     width: 100%;
     max-width: 250px;
     justify-content: center;
+  }
+
+  .image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
   }
 }
