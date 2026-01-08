@@ -14,6 +14,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .skill-category {
@@ -29,4 +32,88 @@
   gap: 0.5rem;
   color: #3498db;
   margin-bottom: 0.5rem;
+}
+
+.skill-category h3 svg {
+  font-size: 1.2rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.skill-category li::before {
+  content: '▹';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+}
+
+.skill-progress {
+  margin-top: 0.5rem;
+}
+
+.skill-bar {
+  background: #e9ecef;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.skill-percentage {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem 0;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.1rem;
+  }
+
+  .skill-category li {
+    font-size: 0.9rem;
+  }
 }

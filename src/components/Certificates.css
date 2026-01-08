@@ -46,3 +46,45 @@
     transform: scale(1);
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificates {
+    padding: 3rem 0;
+  }
+
+  .certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .certificate-card {
+    padding: 1.5rem;
+  }
+
+  .certificate-card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates h2 {
+    font-size: 1.8rem;
+  }
+
+  .certificate-card {
+    padding: 1rem;
+  }
+
+  .certificate-card h3 {
+    font-size: 0.95rem;
+  }
+}

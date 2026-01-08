@@ -52,3 +52,34 @@
     transform: translateY(0);
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+}

@@ -10,6 +10,12 @@
   font-size: 2.5rem;
 }
 
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .experience-item {
   background: #f8f9fa;
   padding: 2rem;
@@ -17,6 +23,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: slideInLeft 0.8s ease-out;
+  margin-bottom: 2rem;
 }
 
 .experience-item:hover {
@@ -26,6 +33,19 @@
 
 .experience-item h3 {
   color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.experience-item .company {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item .duration {
+  color: #495057;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -39,6 +59,7 @@
   color: #34495e;
   position: relative;
   padding-left: 1.5rem;
+  line-height: 1.6;
 }
 
 .experience-item li::before {
@@ -57,5 +78,45 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 0;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .experience-item li {
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience h2 {
+    font-size: 1.8rem;
+  }
+
+  .experience-item {
+    padding: 1rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.2rem;
   }
 }

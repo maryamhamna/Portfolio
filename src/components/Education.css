@@ -10,10 +10,84 @@
   font-size: 2.5rem;
 }
 
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .education-item {
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.education-item .institution {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.education-item .duration {
+  color: #495057;
+  font-weight: 500;
   margin-bottom: 1rem;
+}
+
+.education-item p {
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 0;
+  }
+
+  .education h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .education-item {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .education-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-item {
+    padding: 1rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.2rem;
+  }
 }
